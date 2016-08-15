@@ -1,0 +1,11 @@
+
+<script>
+
+    //域名(个人习惯于把域名统一管理，便于更换)
+    var globalUrl = "";
+    //微信分享
+    $(function(){
+        WeChatShare.getSignatureInfo(globalUrl+'/wechat/sign?url='+encodeURIComponent(window.location.href));
+    })
+    
+</script>
