@@ -1,9 +1,10 @@
-
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="libs/weChatShare.js"></script>
 <script>
 
     //域名(个人习惯于把域名统一管理，便于更换)
     var globalUrl = "";
-    //微信分享
+    //微信分享,getSignatureInfo函数传的是后端接口地址,不同的接口返回JSON格式可在weChatShare.js里修改
     $(function(){
         WeChatShare.getSignatureInfo(globalUrl+'/wechat/sign?url='+encodeURIComponent(window.location.href));
     })
